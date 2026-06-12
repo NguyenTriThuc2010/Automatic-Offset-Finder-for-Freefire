@@ -10,7 +10,7 @@ jobs:
     - name: Build Solution
       run: msbuild . -p:Configuration=Release -p:Platform=x64
     - name: Upload Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Offset-Finder-Exe
         path: '**/Release/*.exe'
